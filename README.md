@@ -31,7 +31,12 @@ let kingfisherItem = LicensingItem(
     license: License.mit(owner: "Wei Wang", years: "2015")
 )
 
-licensingViewController.items = [alamofireItem, caniveteItem, kingfisherItem]
+let fabricItem = LicensingItem(
+    title: "Fabric",
+    license: License.custom(owner: "Google", years: "2017", "Please visit https://fabric.io/terms for details.")
+)
+
+licensingViewController.items = [alamofireItem, caniveteItem, kingfisherItem, fabricItem]
 ```
 
 ### Screenshot
